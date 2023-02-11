@@ -89,6 +89,70 @@
     margin: 0 auto;
 }
 
+/* PARTE LÓGICA COLUNAS JOGO */
+
+.jv-column-top, .jv-column-mid, .jv-column-bottom {
+    display: flex;
+}
+
+.jv-p {
+    width: 206px;
+    height: 180px;
+}
+
+.jv-p-center {
+    width: 240px;
+    height: 180px;
+}
+
+
+/* PARTE VISUAL COLUNAS JOGO */
+
+.jv-position-one {
+    height: 540px;
+    padding: 0 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.jv-column-vertical {
+    width: 26px;
+    height: 467px;
+    border: 14px solid #FFD232;
+    border-radius: 10px;
+    margin-top: 37px;
+}
+
+.jv-position-two {
+    width: 648px;
+    height: 545px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jv-column-horizontal, .jv-column-horizontal2 {
+    width: 26px;
+    height: 557px;  
+    border: 14px solid #FFD232;
+    border-radius: 10px;
+    transform: rotate(90deg);
+    margin: 95px 0;
+    position: absolute;
+    z-index: 3;
+}
+
+.jv-column-horizontal2 {
+    margin: -110px;
+}
+
 .jv-btn-icon-close {
     width: 115px;
     height: 105px;
@@ -132,6 +196,9 @@
 }
 
 
+
+
+
 /* CLASES UTILITÁRIAS */
 
 .jv-font {
@@ -162,7 +229,7 @@
 
 .jv-gray {
     font-size: 35px;
-    line-height: 42px;
+    line-height: 42px; 
     color: #666665;
 }
 
