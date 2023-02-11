@@ -14,21 +14,33 @@ body {
 
 /* importar backgroud como png do  adobe */
 
-.jv-icon-help {
+.jv-btn-icon-help {
+    display: block;
     position: absolute;
     left: 1703px;
     top: 73px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 200;
+    transition: all 0.2s ease-out;
+}
+
+.jv-btn-icon-help:hover {
+    transform: scale(1.1);
 }
 
 .jv-icon-play {
     position: absolute;
     left: 806px;
     top: 513px;
+    transition: all 0.2s ease-out;
+}
+
+.jv-icon-play:hover{
+    transform: scale(1.1);
 }
 
 .jv-poster-help {
+    visibility: hidden;
     width: 320px;
     height: 414px;
     background-color: #FEFEED;
@@ -73,3 +85,8 @@ body {
     text-align: center;
 }
 
+/* CLASSES COMPORTAMENTO */
+
+.jv-is-visible {
+    visibility:visible
+}
